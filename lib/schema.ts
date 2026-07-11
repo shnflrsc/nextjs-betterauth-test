@@ -6,3 +6,5 @@ export const postsTable = pgTable("posts", {
   title: varchar("title", { length: 256 }).notNull(),
   content: varchar("content", { length: 1024 }).notNull(),
 });
+
+export * from "./auth-schema";
